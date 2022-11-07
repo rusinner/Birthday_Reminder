@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+:root {
+  --bg-color: #fadadd;
+  --main-white: #fff;
+  --main-black: #333;
+  --main-shadow: 5px 5px 15px 3px #000000;
+  --h3-size: 2rem;
+}
+
+body {
+  background: var(--bg-color);
+  display: flex;
+  justify-content: center;
+}
+.container {
+  background: var(--main-white);
+  width: 40rem;
+  height: auto;
+  padding: 2rem 3rem;
+  margin-top: 10vh;
+  box-shadow: var(--main-shadow);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1.2rem;
+  row-gap: 2rem;
+}
+
+h3 {
+  font-size: var(--h3-size);
+  color: var(--main-black);
+}
+button {
+  width: 100%;
+  height: auto;
+  padding: 0.6rem;
+  background: var(--bg-color);
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.3rem;
+  color: var(--main-black);
+  cursor: pointer;
+}
+button:hover {
+  transform: scale(1.01);
+  letter-spacing: 0.4rem;
+}
+.person {
+  position: relative;
+  width: 90%;
+  height: auto;
+}
+img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+article {
+  display: flex;
+  align-items: flex-start;
+  gap: 4rem;
+}
+article div {
+  margin-top: 0.5rem;
+  background: var(--bg-color);
+  padding: 0.2rem 3rem;
+  border-radius: 1rem;
+  color: var(--main-black);
+}
+
+article button {
+  margin-top: 1.3rem;
+}
